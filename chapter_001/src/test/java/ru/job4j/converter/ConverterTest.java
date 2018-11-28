@@ -32,4 +32,11 @@ public class ConverterTest {
         int result = converter.EuroToruble(1);
         assertThat(result, is(75));
     }
+
+    @Test
+    public void when600DollarTo67RubleThen40200() {
+        Converter converter = new Converter();
+        int result = converter.DollarToruble(600);
+        assertThat(result, is(67));
+    }
 }

@@ -8,35 +8,35 @@ public class ConverterTest {
     @Test
     public void when60RubleToDollarThen1() {
         Converter converter = new Converter();
-        int result = converter.rubleToDollar(60);
+        int result = converter.RubleToDollar(60);
         assertThat(result, is(1));
     }
 
     @Test
     public void when70RubleToEuroThen1() {
         Converter converter = new Converter();
-        int result = converter.rubleToEuro(70);
+        int result = converter.RubleToEuro(70);
         assertThat(result, is(1));
     }
 
     @Test
     public void whenDollarTo67RubleThen67() {
         Converter converter = new Converter();
-        int result = converter.DollarToruble(1);
+        int result = converter.DollarToRuble(1);
         assertThat(result, is(67));
     }
 
     @Test
     public void whenEuroTo75RubleThen75() {
         Converter converter = new Converter();
-        int result = converter.EuroToruble(1);
+        int result = converter.EuroToRuble(1);
         assertThat(result, is(75));
     }
 
     @Test
     public void when600DollarTo67RubleThen40200() {
         Converter converter = new Converter();
-        int result = converter.DollarToruble(600);
-        assertThat(result, is(67));
+        int result = converter.DollarToRuble(600);
+        assertThat(result, is(40200));
     }
 }

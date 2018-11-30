@@ -46,4 +46,18 @@ public class ConverterTest {
         int result = converter.rubleToDollar(40200);
         assertThat(result, is(600));
     }
+
+    @Test
+    public void when45000RubleToEuroThen600() {
+        Converter converter = new Converter();
+        int result = converter.rubleToEuro(45000);
+        assertThat(result, is(600));
+    }
+
+    @Test
+    public void when600EuroTo75RubleThen45000() {
+        Converter converter = new Converter();
+        int result = converter.euroToRuble(600);
+        assertThat(result, is(45000));
+    }
 }

@@ -19,7 +19,7 @@ public class FactorialTest {
     @Test
     public void whenCalculateFactorialForZeroThenOne() {
         Factorial factorial = new Factorial();
-        factorial.calc(1);
+        factorial.calc(0);
         int summ = factorial.calc(1);
         int expected = 1;
         assertThat(summ, is(expected));

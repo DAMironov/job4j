@@ -7,11 +7,11 @@ public class Car {
         this.volume = this.volume - kilometer;
     }
 
-    public void fill(int gas){
+    public void fill(int gas) {
         this.volume = this.volume + 10 * gas;
     }
 
-    public boolean canDrive(){
+    public boolean canDrive() {
         boolean result = this.volume > 0;
         return result;
     }
